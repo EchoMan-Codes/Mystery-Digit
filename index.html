@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <link rel="png" size="32x32" href="Assets/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- BACKGROUND VIDEO -->
+    <video
+      src="Assets/galaxy.mp4"
+      class="bg-video"
+      autoplay
+      muted
+      loop
+      plays-inline
+    ></video>
+
+    <!-- DARK OVERLAY -->
+    <div class="overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <header class="header">
+        <h1 class="gradient">Guess the Number</h1>
+        <p class="gradient">Number between 0 & 100</p>
+      </header>
+
+      <div class="game-card">
+        <div class="number-box">Empty</div>
+
+        <button class="btn primary">Generate Random Number</button>
+
+        <input type="number" min="0" max="100" placeholder="Enter your Guess" />
+
+        <button class="btn secondary">Check</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
